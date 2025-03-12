@@ -12,7 +12,7 @@ import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'http://localhost:4321/',
+  site: 'https://soorajts.vercel.app/',
   integrations: [expressiveCode(expressiveCodeOptions), tailwind({
     applyBaseStyles: false
   }),sitemap(), icon(),mdx()],
