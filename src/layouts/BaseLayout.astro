@@ -1,6 +1,6 @@
 ---
 import type { SiteMeta } from '@/types'
-
+import { Analytics } from '@vercel/analytics/next';
 import BaseHead from '@/components/BaseHead.astro'
 import Footer from '@/components/layout/Footer.astro'
 import Header from '@/components/layout/Header.astro'
@@ -31,5 +31,6 @@ const {
 			<slot />
 			<Footer />
 		</main>
+		<Analytics />
 	</body>
 </html>
