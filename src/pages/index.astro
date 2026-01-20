@@ -13,9 +13,25 @@ import profile_photo from '../assets/profile.jpg'
 // import { getAllPosts, sortMDByDate } from '@/utils'
 
 // const languages = ['Java', 'C', 'C#', 'C++']
-const machine_learning = ['LangChain','TensorFlow','OpenCV', 'RAG', 'ChromaDB', 'FAISS']
-const backend = ['Python','C++', 'FastAPI','Pandas','REST API','GrapQL','MongoDB','SQL']
-const others = ['Git','Google Cloud','Docker']
+const programming_languages = ['Python', 'Go']
+
+const frameworks_tools = ['FastAPI', 'Django', 'Pytest', 'NATS']
+
+const backend_development = ['REST', 'GraphQL']
+
+const databases = ['PostgreSQL', 'MongoDB', 'ChromaDB']
+
+const cloud_infrastructure = [
+  'GCP',
+  'Docker',
+  'Kubernetes',
+  'OpenStack',
+  'Terraform',
+  'Linux'
+]
+const agentic_frameworks = ["LangGraph", "Google", "ADK", "Agno"]
+
+const monitoring_observability = ['Datadog', 'Logfire']
 
 // const MAX_POSTS = 10
 // const allPosts = await getAllPosts()
@@ -39,6 +55,7 @@ const others = ['Git','Google Cloud','Docker']
 					href='https://github.com/SOORAJTS2001'
 					class='flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
 				>
+				
 					<span class='relative flex items-center justify-center'>
 						<span
 							class='absolute inline-flex h-2 w-2 animate-ping rounded-full border border-green-400 bg-green-400 opacity-75'
@@ -52,7 +69,7 @@ const others = ['Git','Google Cloud','Docker']
 				&nbsp;
 
 				<a
-					href='https://drive.google.com/file/d/17tA6ndNjk5EKENl7vBFvAFWJhCR8b3eq/view?usp=sharing'
+					href='https://drive.google.com/file/d/1qdP1J2_yPGMc53OHXTEORzYI6RcaujSu/view?usp=sharing'
 					class='flex flex-row items-center gap-x-3 rounded-3xl border border-input px-4 py-2 text-sm shadow-sm transition-all hover:shadow-md'
 				>
 					<span class='relative flex items-center justify-center'>
@@ -104,18 +121,21 @@ const others = ['Git','Google Cloud','Docker']
 		</section>
 
 		<Section title='About'>
-			<p class='text-muted-foreground'>
-				Hi, I'm <strong><span class="text-red-300">Sooraj</span></strong>, a passionate problem solver, currently working as a <strong><span class="text-red-300">Product Engineer</span></strong> at <strong><span class="text-red-300">Strollby Inc</span></strong>.
-				I have completed my undergraduate in Electrical and Electronics Engineering from <strong><span class="text-red-300">TKM College of Engineering</span></strong>.
-				I love to work on complex problems and make solutions for a better world.
+			  <p class='text-muted-foreground'>
+			  Hi, I'm <strong><span class="text-red-300">Sooraj</span></strong>, I’m a Product Engineer at <strong><span class="text-red-300">Strollby Inc</span></strong>, and I love solving real-world problems with programming. Most of my work revolves around building backend systems that are practical, reliable, and easy to evolve as products grow.
+				I contribute to open-source frameworks like <strong><span class="text-red-300">Agno AGI and Google ADK</span></strong>, and I enjoy sharing what I learn through community talks at events such as <strong><span class="text-red-300">PyData 2025, PyCon Asia 2026, FOSS Asia 2026 and the Trivandrum Python Community </span></strong> around backend engineering, AI systems, and developer productivity.
+				I was also a finalist in the <strong><span class="text-red-300">Python Code Jam 2025</span></strong>, where I was recognized for practical, out-of-the-box problem solving.
 			  </p>
-			  
 		</Section>
 		<Section title='Skills'>
 			{/* <SkillLayout title='Languages' skills={languages} /> */}
-			<SkillLayout title='Machine Learning' skills={machine_learning} />
-			<SkillLayout title='Backend' skills={backend} />
-			<SkillLayout title='Others' skills={others} />
+			<SkillLayout title='Programming Languages' skills={programming_languages} />
+			<SkillLayout title='Frameworks and Tools' skills={frameworks_tools} />
+			<SkillLayout title='Backend Development' skills={backend_development} />
+			<SkillLayout title='Databases' skills={databases} />
+			<SkillLayout title='Cloud Infrastructure' skills={cloud_infrastructure} />
+			<SkillLayout title='Observability' skills={monitoring_observability} />
+			<SkillLayout title='Agentic Development' skills={agentic_frameworks} />
 		</Section>
 		<!-- {
 			allPostsByDate.length > 0 && (
@@ -140,11 +160,79 @@ const others = ['Git','Google Cloud','Docker']
 				altText='Strollby'
 				imageClass='h-12 w-auto md:-left-16'
 			>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li> Managed and implemented ingestion of <strong><span class="text-red-300">4 million</span></strong> hotels record into MongoDB, improving performance by <strong><span class="text-red-300">40 %</span></strong> </li>
-					<li>Developed locations microservice from scratch with a sub <strong><span class="text-red-300">80 ms</span></strong> response time</li>
-					<li>Made a <strong><span class="text-red-300">Retrieval-Augmented Generation (RAG)</span></strong> powered knowledge base application for the team</li>
-				</ul>
+				<ul class="ml-4 list-disc text-muted-foreground space-y-2">
+  <li>
+    Built ETL pipelines for over
+    <strong><span class="text-red-300">4 million+</span></strong>
+    hotel listings from providers like
+    <strong><span class="text-red-300">Amadeus</span></strong>,
+    ingesting data into
+    <strong><span class="text-red-300">MongoDB</span></strong>
+    and powering search & recommendations using
+    <strong><span class="text-red-300">Elasticsearch</span></strong>.
+  </li>
+
+  <li>
+    Designed and optimized
+    <strong><span class="text-red-300">CI/CD pipelines</span></strong>
+    using Bitbucket, reducing deployment time by
+    <strong><span class="text-red-300">40%</span></strong>
+    and minimizing human errors.
+  </li>
+
+  <li>
+    Established scalable
+    <strong><span class="text-red-300">Kubernetes</span></strong>
+    deployment workflows on
+    <strong><span class="text-red-300">GCP</span></strong>,
+    reducing system downtime by
+    <strong><span class="text-red-300">60%</span></strong>
+    and improving application availability by
+    <strong><span class="text-red-300">35%</span></strong>
+    under high traffic.
+  </li>
+
+  <li>
+    Engineered a low-latency
+    <strong><span class="text-red-300">GeoLocations Microservice</span></strong>
+    delivering
+    <strong><span class="text-red-300">sub-80ms (P95)</span></strong>
+    responses at
+    <strong><span class="text-red-300">500K+ requests/day</span></strong>,
+    backed by PostgreSQL, containerized with Docker, and autoscaled on Google Cloud.
+  </li>
+
+  <li>
+    Hands-on experience with
+    <strong><span class="text-red-300">Linux systems</span></strong>,
+    performance tuning, debugging, and automation pipelines, reducing infrastructure
+    bootstrap time.
+  </li>
+
+  <li>
+    Provisioned and managed infrastructure using
+    <strong><span class="text-red-300">Terraform</span></strong>,
+    improving maintainability, resilience, and secrets management abstraction.
+  </li>
+
+  <li>
+    Contributed to system reliability by building comprehensive
+    <strong><span class="text-red-300">Pytest</span></strong>
+    test suites and  observability via
+    <strong><span class="text-red-300">Datadog</span></strong>
+    dashboards.
+  </li>
+
+  <li>
+    Led a team to build an
+    <strong><span class="text-red-300">Agentic AI Travel Planner & Booking Platform</span></strong>
+    with context-aware intelligent agents using
+    <strong><span class="text-red-300">LangGraph</span></strong>,
+    <strong><span class="text-red-300">Google ADK</span></strong>,
+    and vector databases.
+  </li>
+</ul>
+
 			</Card>
 			<Card
 				heading='Internship'
@@ -186,65 +274,96 @@ const others = ['Git','Google Cloud','Docker']
 		</Section>
 		<Section title='Awards and Honours'>
 			<Card>
-				<ul class='ml-4 list-disc text-muted-foreground'>
-					<li>Awarded the <strong><span class="text-red-300">UST super star award</span></strong> </li>
-					<li>Speaker at Trivandrum Python Community</li>
-					<li><strong><span class="text-red-300">Course Topper 2023 - Introduction To Java - NPTEL IIT Kharagpur</span></strong></li>
-					<li>Runner Up for National Level Hackathon Navonmesh 2021, 200 + teams participated</li>
-					<li>Winner of Hackathons WiE by FISAT, Latency 2.0 by TKMCE</li>
-					
-				</ul>
+				<ul class="ml-4 list-disc text-muted-foreground space-y-2">
+  <li>
+    Speaker at
+    <strong><span class="text-red-300">PyData Global 2025</span></strong>,
+    <strong><span class="text-red-300">PyCon Asia 2026</span></strong>,
+    and
+    <strong><span class="text-red-300">FOSS Asia 2026</span></strong>.
+  </li>
+
+  <li>
+    <strong><span class="text-red-300">Python Code Jam Finalist 2025</span></strong>,
+    ranked among top international competitors.
+  </li>
+
+  <li>
+    Open-source contributor to agentic frameworks including
+    <strong><span class="text-red-300">Google ADK (13K+ stars)</span></strong>
+    and
+    <strong><span class="text-red-300">Agno (30K+ stars)</span></strong>.
+  </li>
+
+  <li>
+    Two-time
+    <strong><span class="text-red-300">UST “Super Star” Award</span></strong>
+    recipient for engineering excellence and delivery impact.
+  </li>
+
+  <li>
+  <strong>
+    <span class="text-red-300">Oracle Certified Foundation Associate</span>
+  </strong>
+  (ID: 324120383OCI25FNDCFA) —
+  <a
+    href="https://drive.google.com/file/d/1w_PWhFC30aqd_K8UxqhU1XySm0MvBgyC/view?usp=sharing"
+    class="underline underline-offset-2 hover:text-red-300"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    view certificate
+  </a>
+</li>
+
+</ul>
+
 			</Card>
 
 		</Section>
 
-		<Section title='Projects'>
-			<div class='flex flex-col gap-y-5 sm:flex-row sm:gap-x-5 sm:gap-y-5'>
-				<ProjectCard
-					href='https://jugaad-frontend.vercel.app/'
-					heading="Jugaad"
-					subheading='JioMart price tracker with ML-based price prediction, async scraping, and alerts for drops. Scalable, efficient, and easily extendable.'
-					imagePath='/src/assets/jugaad.jpeg'
-					altText='Jugaad!'
-					class='w-full sm:w-1/2'
-				/>
-				<ProjectCard
-					href='https://github.com/SOORAJTS2001/igloo'
-					heading='Igloo'
-					subheading="A modern, responsive web application for managing and searching through various document formats with real-time search using RAG"
-					imagePath='/src/assets/igloo.png'
-					altText='Igloo!'
-					class='w-full sm:w-1/2'
-				/>
-			</div>
-			<div class='flex flex-col gap-y-5 sm:flex-row sm:gap-x-5 sm:gap-y-5'>
-				<ProjectCard
-					href='https://github.com/SOORAJTS2001/RetroGeo'
-					heading="RetroGeo"
-					subheading='Our reverse geocoding library is a high-performance, offline solution that processes geographical coordinates to retrieve full addresses, including country, state, and city'
-					imagePath='/src/assets/Retro-Geo.png'
-					altText='RetroGeo'
-					class='w-full sm:w-1/2'
-				/>
-				<ProjectCard
-					href=''
-					heading="Genesis"
-					subheading='Engineered a VR visualization system that converts voice prompts into 3D images using stable diffusion, enhancing immersive content creation, presented at UST D3 2023'
-					imagePath='/src/assets/genesis.png'
-					altText='Genesis'
-					class='w-full sm:w-1/2'
-				/>
-			</div>
-			<div class='flex flex-col gap-y-5 sm:flex-row sm:gap-x-5 sm:gap-y-5'>
-				<ProjectCard
-					href=''
-					heading="Seamless Start"
-					subheading='Created a chatbot interface utilizing vector database (ChromaDB) and RAG to deliver in-depth internal company insights, showcased at UST D3 2024'
-					imagePath='/src/assets/seamless-start.png'
-					altText='Seamless Start!'
-					class='w-full sm:w-1/2'
-				/>
-			</div>
-		</Section>
+		<Section title="Projects">
+  <div class="flex flex-col gap-y-5 sm:flex-row sm:gap-x-5 sm:gap-y-5">
+    <ProjectCard
+      href="http://uplog.live/"
+      heading="Uplog"
+      subheading={`Uplog is a CLI-first logging tool that streams local application logs to the cloud in real time.
+It gives you instant, shareable log links with zero setup, built for debugging, collaboration, and production-grade observability.`}
+      imagePath="/src/assets/uplog_icon.png"
+      altText="Uplog Icon"
+      className="w-full sm:w-1/2"
+    />
+	<ProjectCard
+      href="https://github.com/SOORAJTS2001/gazetteer"
+      heading="Gazetteer"
+      subheading="A fast offline, boundary aware reverse geocoding library in pure python"
+      imagePath="/src/assets/Retro-Geo.png"
+      altText="Gazetteer"
+      className="w-full sm:w-1/2"
+    />
+
+    
+  </div>
+
+  <div class="flex flex-col gap-y-5 sm:flex-row sm:gap-x-5 sm:gap-y-5">
+    <ProjectCard
+      href="https://jugaad-frontend.vercel.app/"
+      heading="Jugaad"
+      subheading="JioMart price tracker with ML-based price prediction, async scraping, and alerts for drops. Scalable, efficient, and easily extendable."
+      imagePath="/src/assets/jugaad.jpeg"
+      altText="Jugaad"
+      className="w-full sm:w-1/2"
+    />
+
+    <ProjectCard
+      href="https://github.com/SOORAJTS2001/igloo"
+      heading="Igloo"
+      subheading="A modern, responsive web application for managing and searching through various document formats with real-time search using RAG"
+      imagePath="/src/assets/igloo.png"
+      altText="Igloo"
+      className="w-full sm:w-1/2"
+    />
+  </div>
+</Section>
 	</div>
 </PageLayout>
